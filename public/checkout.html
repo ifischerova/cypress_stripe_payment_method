@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vesmírné perníčky</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://js.stripe.com/v3/"></script>
+  </head>
+  <body>
+    <section>
+      <div class="product">
+        <img src="/static/images/pernicky1.png" alt="Pernicky s vesmirnou tematikou." />
+        <div class="description">
+          <h1>Nejlepší perníčky v celém vesmíru!</h1>
+          <h5>500 Kč</h5>
+        </div>
+      </div>
+      <form action="/create-checkout-session" method="POST">
+        <button type="submit" id="checkout-button">Koupit</button>
+      </form>
+    </section>
+  </body>
+</html>
