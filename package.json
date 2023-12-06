@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "cypress": "^13.6.0",
+    "cypress-plugin-stripe-elements": "^1.0.2"
+  }
+}
