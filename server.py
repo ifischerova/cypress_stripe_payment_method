@@ -37,7 +37,7 @@ def create_checkout_session():
             cancel_url=YOUR_DOMAIN + '/cancel.html',
         )
     except Exception as e:
-        return str(e)
+        return redirect('/error.html', code=303)
 
     return redirect(checkout_session.url, code=303)
 

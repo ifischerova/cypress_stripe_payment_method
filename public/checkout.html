@@ -8,10 +8,14 @@
   <body>
     <section>
       <div class="product">
-        <img src="/static/images/pernicky1.png" alt="Pernicky s vesmirnou tematikou." />
+        <img id="ginger-img" src="/static/images/pernicky1.png" alt="Pernicky s vesmirnou tematikou." />
         <div class="description">
           <h1>Nejlepší perníčky v celém vesmíru!</h1>
-          <h5>500 Kč</h5>
+          <h2 id="product-name">Sada pernicku Vesmir</h2>
+          <h5 id="ginger-price">
+            <span id="amount">500</span>
+            <span id="currency">Kč</span>
+          </h5>
         </div>
       </div>
       <form action="/create-checkout-session" method="POST">
